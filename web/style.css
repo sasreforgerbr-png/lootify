@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: system-ui, sans-serif; }
+#app { display: none; position: absolute; inset: 5% 10%; background: #0c0f12; border: 1px solid #2a2f36; border-radius: 10px; overflow: hidden; }
+.topbar { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; background: #12161b; border-bottom: 1px solid #2a2f36; }
+#title { font-weight: 700; color: #cbd5e1; }
+#btnClose { background: transparent; border: none; color: #94a3b8; font-size: 20px; cursor: pointer; }
+#content { padding: 12px; overflow: auto; height: calc(100% - 42px); }
+
+.grid { display: grid; gap: 4px; padding: 6px; background: #0b0e11; border: 1px solid #20252b; border-radius: 8px; }
+.cell { background: linear-gradient(135deg,#0f141a,#0b0e12); border: 1px solid #1f2530; min-width: 40px; min-height: 40px; border-radius: 4px; }
+.row { display: flex; gap: 8px; margin-top: 8px; }
+.block { flex: 1; }
+
+/* pocket row wraps */
+#grid-root > .row + .row { margin-top: 8px; }
+
+/* subtle shadow */
+.grid, .block { box-shadow: 0 2px 16px rgba(0,0,0,.25); }

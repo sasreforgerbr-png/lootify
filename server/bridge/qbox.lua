@@ -1,0 +1,1 @@
+-- Qbox/QBCore specific hooks can be added here later.
